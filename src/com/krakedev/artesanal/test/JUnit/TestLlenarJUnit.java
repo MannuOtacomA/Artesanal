@@ -1,0 +1,20 @@
+package com.krakedev.artesanal.test.JUnit;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import com.krakedev.artesanal.Maquina;
+
+public class TestLlenarJUnit {
+
+	@Test
+	public void testLlenarMaquina() {
+		Maquina rubia = new Maquina("Pilsener", "Cerveza", 0.02, 8000,"cod018");
+		rubia.llenarMaquina();
+
+		assertEquals(7900, rubia.getCantidadActual(), 0.0001);
+
+	}
+
+}

@@ -1,0 +1,18 @@
+cremos el projecto de eclipse, click derecho en el area de proyectos show in/System explorer, buscamos o creamos .gitignore
+		bin/
+		.settings/
+		.project
+		.classpath
+
+
+git init
+
+git add .
+
+git commit -m "1er commit"		(de aqui en git creamos el repositorio y copiamos url)
+
+git branch -M main		(pasamos a main)
+
+git remote add origin https://github.com/MannuOtacomA/Artesanal.git
+
+git push -u origin main
